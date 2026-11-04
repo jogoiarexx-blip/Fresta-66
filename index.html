@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#101713" />
+  <meta name="description" content="FRESTA — O Lado de Dentro. Um survival horror de exploração no Edifício Mirante. Capítulo I jogável no navegador." />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <title>FRESTA — O Lado de Dentro</title>
+  <script type="module" crossorigin src="./assets/index-BO9CcrNC.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three-CAULdrNo.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-DeN7XKQG.css">
+</head>
+<body>
+  <canvas id="world" aria-label="Cenário 3D de FRESTA"></canvas>
+  <div id="grain" aria-hidden="true"></div><div id="vignette" aria-hidden="true"></div>
+  <main id="menu" class="screen menu">
+    <div class="masthead"><span class="wordmark">MIRANTE / 1989</span><span class="edition">UM ARQUIVO DO PROJETO ECO</span><span class="chapter-tag">CAPÍTULO I · TÉRREO</span></div>
+    <div class="menu-main">
+      <p class="eyebrow"><span class="live-dot"></span> O SILÊNCIO TEM UM LADO DE DENTRO.</p>
+      <h1>FRESTA<span class="title-crack" aria-hidden="true"></span></h1>
+      <p class="subtitle">O LADO DE DENTRO</p>
+      <div class="menu-rule"></div>
+      <p class="intro">O pior não está atrás da porta.<br>Está dentro da parede.</p>
+      <nav class="menu-actions" aria-label="Menu principal">
+        <button id="new-game" class="primary"><span>Entrar no Mirante</span><span aria-hidden="true">↗</span></button>
+        <button id="continue-game" class="text-button" disabled>Continuar a gravação <span>→</span></button>
+        <div class="menu-secondary"><button data-action="settings">Configurações</button><span>/</span><button data-action="controls">Como jogar</button><span>/</span><button data-action="credits">Créditos</button></div>
+      </nav>
+    </div>
+    <aside class="case-note"><span class="case-top">ENGENHARIA · INSPEÇÃO 017</span><p>EDIFÍCIO MIRANTE</p><small>DEMOLIÇÃO SUSPENSA</small><div class="case-line"></div><span>“Procure o espaço que deveria<br>existir entre a 16 e a 18.”</span><b>T. AZEVEDO</b></aside>
+    <footer class="menu-footer"><span>EXPLORAÇÃO / SOBREVIVÊNCIA / HORROR PSICOLÓGICO</span><span><i></i> FONES RECOMENDADOS <b>01 — A PORTA QUE NÃO ABRE</b></span></footer>
+  </main>
+  <div id="hud" hidden>
+    <div class="hud-top"><div><span id="room-kicker">EDIFÍCIO MIRANTE</span><h2 id="room-name">Portaria</h2><p id="safe-label" hidden>SALA DE ESCUTA · VOCÊ ESTÁ EM SEGURANÇA</p></div><button id="pause-button" aria-label="Pausar">Ⅱ</button></div>
+    <div id="objective"><span>OBJETIVO</span><p id="objective-text"></p></div>
+    <div id="crosshair" aria-hidden="true"></div>
+    <div id="interaction" hidden><span class="key">E</span><span id="interaction-label"></span></div>
+    <div id="subtitle" role="status" aria-live="polite"></div>
+    <div class="hud-bottom"><span id="stance">1ª PESSOA</span><span class="hud-help">TAB DIÁRIO <i>·</i> M PLANTA <i>·</i> F LANTERNA</span><div id="power"><span id="light-icon">◈</span><div class="meter"><div id="battery-bar"></div></div><span id="battery-value">100%</span><div class="stamina"><div id="stamina-bar"></div></div></div></div>
+    <div id="telemetry" hidden></div>
+  </div>
+  <div id="notice" role="status"></div>
+  <div id="modal" class="screen" hidden><section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-heading"><span id="modal-kicker">EDIFÍCIO MIRANTE</span><button id="modal-close" aria-label="Fechar">×</button></div><h2 id="modal-title"></h2><div id="modal-content"></div><div id="modal-actions"></div></section></div>
+  <div id="resume" hidden><button id="resume-button"><span class="eyebrow">EXPLORAÇÃO PAUSADA</span><strong>Voltar ao Mirante</strong><small>Clique para capturar o mouse · Esc abre o menu</small></button></div>
+  <div id="fatal" class="screen" hidden><section class="modal-panel"><p class="eyebrow">FRESTA</p><h2>Não foi possível abrir o cenário.</h2><p id="fatal-message"></p><button onclick="location.reload()" class="primary">Tentar novamente</button></section></div>
+</body>
+</html>
