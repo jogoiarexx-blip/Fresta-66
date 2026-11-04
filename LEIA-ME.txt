@@ -1,32 +1,47 @@
-FRESTA — O Lado de Dentro | Capítulo I | versão 0.1.0
+FRESTA — O Lado de Dentro | versão 0.2.0 | Capítulos I e II
 
 PUBLICAR NO GITHUB PAGES
-1. Extraia este ZIP.
+1. Extraia FRESTA_GitHub_Pages.zip.
 2. Envie o CONTEÚDO extraído para a raiz do seu repositório: index.html, assets, favicon.svg, .nojekyll e THIRD_PARTY_NOTICES.txt.
 3. No GitHub, entre em Settings > Pages.
 4. Escolha Deploy from a branch, branch main e pasta / (root).
 5. Salve e aguarde o GitHub informar o endereço publicado.
 
-Este é o build pronto: não é necessário instalar Node.js para publicá-lo.
-Para editar ou usar GitHub Actions, use FRESTA_Codigo_Fonte.zip.
+Este é o build pronto: não precisa de Node.js para publicá-lo.
+Para editar ou publicar por GitHub Actions, use FRESTA_Codigo_Fonte.zip.
+No projeto-fonte: npm ci, npm test, npm run build e npm run check.
+O workflow .github/workflows/pages.yml publica dist em pushes para main.
+O README explica as duas opções. Não há publicação remota confirmada nesta entrega.
 
 REQUISITOS
-Computador com teclado, mouse e navegador com WebGL 2.
-Não abrir index.html por duplo clique. Use o GitHub Pages ou um servidor HTTP local.
-Sem controles touch nesta versão.
+Computador, teclado, mouse e navegador com WebGL 2.
+Não abra index.html por duplo clique. Use o Pages ou um servidor HTTP local.
+Se a GPU preferida não responder, o jogo tenta a placa padrão uma vez.
+WebGL desativado ou indisponível precisa ser resolvido nas configurações do navegador/computador.
+Sem controles touch ou gamepad nesta versão.
 
 CONTROLES
-WASD andar | Mouse olhar | E interagir | Shift correr
-C/Ctrl agachar | F lanterna | Segurar F 2 s dínamo, se a bateria acabar
+WASD andar | Mouse olhar | Setas: alternativa para olhar
+E interagir | Shift correr | C/Ctrl agachar
+F lanterna | Segurar F 2 s: dínamo, se a bateria acabar
 Botão direito concentrar luz | V trocar câmera | M planta | Tab diário
 B usar pilha | Esc pausa | F3 medidor de desempenho
 
-SALVAMENTO
-Use o gravador na sala azul da Zeladoria. As gravações ficam neste navegador/endereço.
-Exportar gravação baixa a última fita ou checkpoint já salvo. Não grava progresso remoto.
+PROGRESSÃO
+Conclua o térreo e use a escadaria leste para subir ao segundo andar.
+Explore os apartamentos 201–206 e reconstitua as placas para acessar a lavanderia.
+Você pode descer e retornar. Portas, itens, documentos e eventos são preservados.
+Os capítulos III–V continuam em desenvolvimento.
 
-ESTADO DA ENTREGA
-Primeiro capítulo implementado. Campanha completa e demais capítulos ainda pendentes.
-22 testes automatizados aprovados. Interface, puzzle e save verificados no navegador.
-A renderização 3D e os FPS precisam de teste em computador: o navegador de QA estava com WebGL desativado.
-O pacote está preparado para o Pages. Não há publicação remota confirmada nesta entrega.
+SALVAMENTO
+Use o gravador na Zeladoria ou na copa 204. As três fitas e o baú pertencem à mesma partida.
+A copa e a Zeladoria são refúgios seguros. Carregar devolve Lia ao refúgio do capítulo salvo.
+Saves da versão 0.1 são aceitos e migrados.
+Exportar baixa a última fita ou checkpoint já salvo; não grava o progresso ainda não salvo.
+As gravações pertencem ao navegador e ao endereço do site. Exporte antes de trocar de computador ou domínio.
+
+VALIDAÇÃO
+36 testes automatizados aprovados; rotas dos dois capítulos verificadas nas duas câmeras, sem GPU.
+Puzzle de placas, save no 204, reload/continuação e planta verificados pela interface do navegador.
+A renderização 3D, o reflexo, o áudio final e os FPS ainda precisam de playtest em computador com WebGL.
+O navegador de QA não disponibilizou WebGL 2. Veja o relatório no pacote de código-fonte.
