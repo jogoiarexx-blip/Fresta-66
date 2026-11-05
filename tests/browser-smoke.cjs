@@ -32,6 +32,7 @@ const nearly=(a,b,eps=.10)=>assert.ok(Math.abs(a-b)<eps,`expected ${a} ≈ ${b}`
     await page.waitForFunction(()=>window.FRESTA.diagnostics().calls>0,{timeout:15000});
     console.log('PASS browser: Chromium opened FRESTA, WebGL produced draw calls');
     await page.locator('#new-game').click();
+    await page.getByRole('button',{name:'Começar em 1ª pessoa'}).click();
     await page.waitForFunction(()=>window.FRESTA.diagnostics().chapter===1 && window.__FRESTA_QA__.game.running,{timeout:15000});
     assert.equal(await page.locator('#hud').isHidden(),false);
     const result=await page.evaluate(()=>{
