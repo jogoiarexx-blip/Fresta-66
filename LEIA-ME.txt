@@ -1,4 +1,4 @@
-FRESTA — O Lado de Dentro | versão 0.2.0 | Capítulos I e II
+FRESTA — O Lado de Dentro | versão 0.3.0 | Capítulos I e II
 
 PUBLICAR NO GITHUB PAGES
 1. Extraia FRESTA_GitHub_Pages.zip.
@@ -27,6 +27,14 @@ F lanterna | Segurar F 2 s: dínamo, se a bateria acabar
 Botão direito concentrar luz | V trocar câmera | M planta | Tab diário
 B usar pilha | Esc pausa | F3 medidor de desempenho
 
+NOVIDADES DESTA VERSÃO
+Menus e fitas com melhor contraste e navegação por teclado; diário com busca.
+Leitura com A-/A+, tema papel/escuro e tamanho independente da interface.
+Planta com zoom e portas sinalizadas; configurações em quatro abas.
+Ambiente mais escuro por padrão; novos materiais com relevo, rugosidade e poeira no feixe.
+Limite de 30/60 FPS; qualidade baixa usa 30 FPS e desliga sombras/poeira.
+O brilho anterior de fábrica é atualizado; escolhas personalizadas são preservadas.
+
 PROGRESSÃO
 Conclua o térreo e use a escadaria leste para subir ao segundo andar.
 Explore os apartamentos 201–206 e reconstitua as placas para acessar a lavanderia.
@@ -41,7 +49,8 @@ Exportar baixa a última fita ou checkpoint já salvo; não grava o progresso ai
 As gravações pertencem ao navegador e ao endereço do site. Exporte antes de trocar de computador ou domínio.
 
 VALIDAÇÃO
-36 testes automatizados aprovados; rotas dos dois capítulos verificadas nas duas câmeras, sem GPU.
-Puzzle de placas, save no 204, reload/continuação e planta verificados pela interface do navegador.
+46 testes automatizados aprovados; rotas dos dois capítulos verificadas nas duas câmeras, sem GPU.
+Leitura, temas, escala de 125%, busca sem acentos, foco por Tab, retorno entre menus, fitas e zoom da planta verificados pela interface.
+A versão anterior também verificou puzzle de placas, save no 204 e reload/continuação.
 A renderização 3D, o reflexo, o áudio final e os FPS ainda precisam de playtest em computador com WebGL.
 O navegador de QA não disponibilizou WebGL 2. Veja o relatório no pacote de código-fonte.
