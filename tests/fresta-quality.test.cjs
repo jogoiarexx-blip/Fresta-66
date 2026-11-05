@@ -2,7 +2,7 @@
 const test=require('node:test'),assert=require('node:assert/strict');
 const fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const root=path.resolve(__dirname,'..');
-const script=fs.readFileSync(path.join(root,'assets/index-fresta-browser-v035.js'),'utf8');
+const script=fs.readFileSync(path.join(root,'assets/index-fresta-landing-v036.js'),'utf8');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 function part(a,b){let i=script.indexOf(a),j=script.indexOf(b,i+a.length);assert.ok(i>=0&&j>i,`Missing ${a}`);return script.slice(i,j)}
 const height=new Function(`return ({${part('stairHeight(t,e){','stairRail(t,e,s,i,a,n')}}).stairHeight`)();
@@ -10,7 +10,7 @@ const pads=[];for(let i=0;i<9;i++){const a=34.66+.32*(i+.5),b=37.54-.32*(i+.5);p
 const near=(x,y)=>assert.ok(Math.abs(x-y)<.065,`expected ${x} ~= ${y}`);
 test('index loads existing cached-versioned assets',()=>{
  for(const a of html.matchAll(/(?:href|src)="\.\/assets\/([^"]+)"/g))assert.ok(fs.existsSync(path.join(root,'assets',a[1])));
- assert.ok(html.includes('index-fresta-browser-v035.js'));
+ assert.ok(html.includes('index-fresta-landing-v036.js'));
 });
 test('staircase has two continuous flights and an intermediate landing',()=>{
  near(h(4.23,34.35),0);near(h(4.23,36.10),.9);near(h(4.23,37.54),1.62);

@@ -4,7 +4,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const source = fs.readFileSync(path.join(__dirname, '..', 'assets/index-fresta-browser-v035.js'),'utf8');
+const source = fs.readFileSync(path.join(__dirname, '..', 'assets/index-fresta-landing-v036.js'),'utf8');
 
 function slice(start, end) {
   const i=source.indexOf(start), j=source.indexOf(end,i+start.length);

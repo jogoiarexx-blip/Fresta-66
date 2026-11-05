@@ -15,7 +15,7 @@ jobs:
           node-version: '22'
       - name: Syntax
         run: |
-          node --check assets/index-fresta-browser-v035.js
+          node --check assets/index-fresta-landing-v036.js
           node --check assets/stair-physics-v034.mjs
           node --check tests/browser-smoke.cjs
       - name: Staircase and document regression tests
