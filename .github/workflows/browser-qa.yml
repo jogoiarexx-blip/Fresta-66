@@ -1,0 +1,27 @@
+name: FRESTA browser QA
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  chromium-webgl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: WebGL and game navigation smoke
+        run: node tests/browser-smoke.cjs
+      - name: Browser QA screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fresta-browser-qa
+          path: browser-qa.png
+          if-no-files-found: ignore
