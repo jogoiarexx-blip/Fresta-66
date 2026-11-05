@@ -1,0 +1,19 @@
+name: FRESTA quality gates
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  static-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax
+        run: node --check assets/index-fresta-qa-v033.js
+      - name: Staircase and document regression
+        run: node --test tests/*.test.cjs
