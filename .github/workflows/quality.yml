@@ -16,8 +16,9 @@ jobs:
       - name: Check production JavaScript and test syntax
         run: |
           node --check tests/v070-release.test.cjs
+          node --check tests/scare-regression.test.cjs
           node --check tests/browser-smoke.cjs
           node --check assets/index-C-oLyjfl.js
           node --check assets/three-DtP2iNHE.js
       - name: FRESTA v0.7.0 release regression tests
-        run: node --test tests/v070-release.test.cjs
+        run: node --test tests/v070-release.test.cjs tests/scare-regression.test.cjs
