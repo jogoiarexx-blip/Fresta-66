@@ -42,3 +42,10 @@ test('static HTML assets resolve locally',()=>{
     assert.ok(fs.existsSync(path.join(root,relative)),relative+' missing');
   }
 });
+
+test('Rastejante faces AI forward and uses human-scale-plus height',()=>{
+  const code=fs.readFileSync(path.join(root,js),'utf8');
+  assert.ok(code.includes('const scale=2.35/size.y;'),'Rastejante target height should be 2.35 m');
+  assert.ok(code.includes('container.rotation.y=Math.PI;'),'model forward should align with AI movement');
+  assert.ok(code.includes('rastejante_animado_fresta.glb'),'animated GLB source missing');
+});
