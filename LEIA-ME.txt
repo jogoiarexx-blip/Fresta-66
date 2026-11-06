@@ -1,4 +1,4 @@
-FRESTA — O Lado de Dentro | versão 0.3.0 | Capítulos I e II
+FRESTA — O Lado de Dentro | versão 0.7.0 | Capítulos I–V
 
 PUBLICAR NO GITHUB PAGES
 1. Extraia FRESTA_GitHub_Pages.zip.
@@ -28,6 +28,18 @@ Botão direito concentrar luz | V trocar câmera | M planta | Tab diário
 B usar pilha | Esc pausa | F3 medidor de desempenho
 
 NOVIDADES DESTA VERSÃO
+Capítulo V integrado: câmara, alimentação auxiliar, ressonadores, travas e saída física.
+O Oco reage à luz mantida nas superfícies. Apague ou mova o feixe ao perceber a vibração.
+Três desfechos; o isolamento preservador depende dos testemunhos e escolhas anteriores.
+As travas têm revisão e confirmação. O checkpoint posterior não prende Lia atrás do retorno fechado.
+Ala acústica com 11 ambientes, três emissores, quarta fita e Sala de Observação segura.
+Alinhe a placa com a pausa do ciclo; o sinal pode ser ouvido, visto ou lido.
+Após encontrar a calibração, estabilizar preserva os testemunhos.
+A voz do interfone pode ser comparada ao protocolo do Ensaio A.
+A galeria lateral tem uma perseguição condicional, com fuga pelo vão baixo ou patamar.
+Subsolo com nove ambientes, puzzle das válvulas, ruptura persistente e terceira fita.
+Arquivo Técnico: terceira Sala de Escuta, com gravação e baú compartilhado.
+Escriba: reage à luz mantida nas superfícies; use pulsos, apague e mude de rota.
 Menus e fitas com melhor contraste e navegação por teclado; diário com busca.
 Leitura com A-/A+, tema papel/escuro e tamanho independente da interface.
 Planta com zoom e portas sinalizadas; configurações em quatro abas.
@@ -39,18 +51,37 @@ PROGRESSÃO
 Conclua o térreo e use a escadaria leste para subir ao segundo andar.
 Explore os apartamentos 201–206 e reconstitua as placas para acessar a lavanderia.
 Você pode descer e retornar. Portas, itens, documentos e eventos são preservados.
-Os capítulos III–V continuam em desenvolvimento.
+Após investigar a lavanderia, use o acesso ao subsolo para iniciar o Capítulo III.
+Regule as válvulas conforme a ordem no depósito; inspecione a fissura e use o vão baixo.
+O controle inferior guarda a terceira fita. É possível voltar pela mesma rota.
+Depois do controle inferior, a porta de isolamento leva ao Capítulo IV.
+Investigue os três emissores e a voz; a anteporta revela o acesso ao Vão 17.
+A anteporta agora permite descer ao Capítulo V. Até confirmar as travas finais, o retorno permanece possível.
+Depois de decidir, atravesse a porta lateral da passarela e alcance a saída alternativa para ver o epílogo.
 
 SALVAMENTO
-Use o gravador na Zeladoria ou na copa 204. As três fitas e o baú pertencem à mesma partida.
-A copa e a Zeladoria são refúgios seguros. Carregar devolve Lia ao refúgio do capítulo salvo.
+Use o gravador na Zeladoria, copa 204, Arquivo Técnico ou Sala de Observação. Os três slots de gravação e o baú pertencem à mesma partida.
+A Sala de Observação, o Arquivo Técnico, a copa e a Zeladoria são refúgios seguros. Carregar devolve Lia ao refúgio do capítulo salvo.
 Saves da versão 0.1 são aceitos e migrados.
 Exportar baixa a última fita ou checkpoint já salvo; não grava o progresso ainda não salvo.
 As gravações pertencem ao navegador e ao endereço do site. Exporte antes de trocar de computador ou domínio.
+No Vão 17, volte à Observação para gravar antes da última manobra. Não há um quinto gravador.
+Confirmar as travas preserva suas fitas manuais e reposiciona o checkpoint junto à saída.
+O epílogo permite exportar o desfecho e carregar uma fita anterior para outra decisão.
+
+LANTERNA
+Modelo fornecido pelo usuário, reduzido de 21,13 MB para 1,19 MB e de 462.956 para 17.774 triângulos.
+Texturas locais incorporadas. Baixado uma vez ao iniciar a primeira partida; as duas câmeras compartilham o modelo.
+Mantenha toda a pasta assets na publicação: o GLB também faz parte do jogo.
 
 VALIDAÇÃO
-46 testes automatizados aprovados; rotas dos dois capítulos verificadas nas duas câmeras, sem GPU.
-Leitura, temas, escala de 125%, busca sem acentos, foco por Tab, retorno entre menus, fitas e zoom da planta verificados pela interface.
+Carregamento real do GLB, texturas 1024 e compartilhamento de recursos confirmados no navegador com renderizador de teste.
+93 testes automatizados aprovados; rotas dos cinco capítulos verificadas nas duas câmeras, sem GPU.
+Interface de alimentação, ressonadores, revisão/confirmacão do desfecho, epílogo C e sua recarga verificados no navegador sem GPU.
+Os finais A, B e C foram percorridos pelos sistemas nas duas câmeras, incluindo saída física e reload.
+As versões anteriores verificaram emissores, estabilização, ciclo visual, leitura, voz, transição III–IV e save/reload na Observação.
+As versões anteriores verificaram válvulas, manômetro e solução em 5 bar.
+A versão anterior verificou leitura, temas, escala de 125%, busca sem acentos, foco, retorno entre menus, fitas e zoom da planta.
 A versão anterior também verificou puzzle de placas, save no 204 e reload/continuação.
 A renderização 3D, o reflexo, o áudio final e os FPS ainda precisam de playtest em computador com WebGL.
 O navegador de QA não disponibilizou WebGL 2. Veja o relatório no pacote de código-fonte.

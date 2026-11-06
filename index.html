@@ -4,18 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#101713" />
-  <meta name="description" content="FRESTA — O Lado de Dentro. Um survival horror de exploração no Edifício Mirante. Capítulos I e II jogáveis no navegador." />
+  <meta name="description" content="FRESTA — O Lado de Dentro. Um survival horror de exploração no Edifício Mirante. Capítulos I–V jogáveis no navegador." />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <title>FRESTA — O Lado de Dentro</title>
-  <script type="module" crossorigin src="./assets/index-fresta-landing-v036.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/three-Dha2PWti.js">
-  <link rel="stylesheet" crossorigin href="./assets/index-fresta-pause-v031.css">
+  <script type="module" crossorigin src="./assets/index-C-oLyjfl.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three-DtP2iNHE.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-DMP2ePgw.css">
 </head>
 <body>
   <canvas id="world" aria-label="Cenário 3D de FRESTA"></canvas>
   <div id="grain" aria-hidden="true"></div><div id="vignette" aria-hidden="true"></div>
   <main id="menu" class="screen menu">
-    <div class="masthead"><span class="wordmark">MIRANTE / 1989</span><span class="edition">UM ARQUIVO DO PROJETO ECO</span><span class="chapter-tag">CAPÍTULOS I–II · MIRANTE</span></div>
+    <div class="masthead"><span class="wordmark">MIRANTE / 1989</span><span class="edition">UM ARQUIVO DO PROJETO ECO</span><span class="chapter-tag">CAPÍTULOS I–V · MIRANTE</span></div>
     <div class="menu-main">
       <p class="eyebrow"><span class="live-dot"></span> O SILÊNCIO TEM UM LADO DE DENTRO.</p>
       <h1>FRESTA<span class="title-crack" aria-hidden="true"></span></h1>
@@ -42,7 +42,7 @@
   </div>
   <div id="notice" role="status"></div>
   <div id="modal" class="screen" hidden><section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-heading"><span id="modal-kicker">EDIFÍCIO MIRANTE</span><button id="modal-close" aria-label="Fechar">×</button></div><h2 id="modal-title"></h2><div id="modal-content"></div><div id="modal-actions"></div></section></div>
-  <div id="resume" hidden><section class="resume-panel" role="dialog" aria-modal="true" aria-labelledby="resume-title"><span class="eyebrow">FRESTA · EDIFÍCIO MIRANTE</span><h2 id="resume-title">Exploração interrompida</h2><p>O jogo está pausado. Continue de onde parou ou abra o menu para consultar suas opções.</p><div class="resume-actions"><button id="resume-button" class="primary">Continuar exploração <span aria-hidden="true">↗</span></button><button id="resume-menu-button">Abrir menu de pausa</button></div><small>Ao continuar, clique no cenário caso o navegador solicite a captura do mouse.</small></section></div>
+  <div id="resume" hidden><button id="resume-button"><span class="eyebrow">EXPLORAÇÃO PAUSADA</span><strong>Voltar ao Mirante</strong><small>Clique para capturar o mouse · Esc abre o menu</small></button></div>
   <div id="fatal" class="screen" hidden><section class="modal-panel"><p class="eyebrow">FRESTA</p><h2>Não foi possível abrir o cenário.</h2><p id="fatal-message"></p><button onclick="location.reload()" class="primary">Tentar novamente</button></section></div>
 </body>
 </html>

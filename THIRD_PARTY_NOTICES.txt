@@ -27,3 +27,5 @@ THE SOFTWARE.
 
 Ferramenta de desenvolvimento: Vite 7.2.2 (MIT). Não é usada como servidor no GitHub Pages.
 As respectivas dependências e licenças estão identificadas em package-lock.json.
+
+Lanterna: modelo GLB fornecido pelo usuário. Derivação otimizada para o jogo; autoria/licença original não informadas. O arquivo original permanece preservado.
