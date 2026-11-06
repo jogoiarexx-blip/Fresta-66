@@ -13,10 +13,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Syntax
+      - name: Check production JavaScript and test syntax
         run: |
-          node --check assets/index-fresta-landing-v036.js
-          node --check assets/stair-physics-v034.mjs
+          node --check tests/v070-release.test.cjs
           node --check tests/browser-smoke.cjs
-      - name: Staircase and document regression tests
-        run: node --test tests/*.test.cjs
+          node --check assets/index-C-oLyjfl.js
+          node --check assets/three-DtP2iNHE.js
+      - name: FRESTA v0.7.0 release regression tests
+        run: node --test tests/v070-release.test.cjs
