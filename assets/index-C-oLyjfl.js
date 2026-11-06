@@ -165,9 +165,10 @@ function frestaRastejante(enemy,enemyType){
     if(!Number.isFinite(size.y)||size.y<=.01){failed=true;return}
     const center=box.getCenter(new C);
     const container=new R;
-    const scale=1.72/size.y;
+    const scale=2.35/size.y; // rastejante: physical visual height, larger than original 1.72 m
     scene.position.set(-center.x,-box.min.y,-center.z);
     container.scale.setScalar(scale);
+    container.rotation.y=Math.PI; // model faces opposite the AI's local -Z forward
     container.add(scene);
     const targets=new Map;
     scene.traverse(node=>{
